@@ -1,1 +1,3 @@
 isd voip
+
+This is a java based blackberry application which communicate with any asterisk voip server using SIP protocol and uses jortp framework for the real time voice data transmission. 
