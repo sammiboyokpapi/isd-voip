@@ -1,0 +1,17 @@
+<body>
+This package implements a transaction layer for the SIP stack according
+to chapter 17 of RF2543 Bis 09.  To implement transaction stateful
+components, you extend the SIPTransactionStack class and not the
+SIPStack class.
+
+To create a client transaction you create a transaction aware
+MessageChannel for the Hop returned from the router by calling 
+Stack.createMessageChannel.
+
+A server transaction is created when an incoming request is fielded by
+the stack. It is passed to the application using the SIPServerRequest
+and SIPServerResponse interface.
+
+Acknowledgement: This package was contributed by Jeff Keyser.
+
+</body>
